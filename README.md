@@ -1,2 +1,234 @@
-# websitebiodatasyaira
-web biodata syairaa
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portofolio Syaira</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet" />
+  <script src="https://unpkg.com/rellax/rellax.min.js"></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    :root {
+      --theme-color: #ec4899;
+    }
+    .theme-text { color: var(--theme-color); }
+    .theme-bg { background-color: var(--theme-color); }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom, #ffffff, #fbcfe8); 
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar {
+      background-color: #f472b6;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .navbar a {
+      color: white;
+      margin-left: 20px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .navbar a:hover {
+      color: #fef3f7;
+    }
+
+    .skills-box {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .skill-item {
+      width: 150px;
+      background-color: #ffe4ec;
+      border-radius: 16px;
+      overflow: hidden;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+      padding: 15px;
+    }
+
+    .skill-item:hover {
+      background-color: #f9a8d4;
+      transform: scale(1.08);
+    }
+
+    .skill-item img {
+      width: 100%;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .skill-item:hover img {
+      transform: scale(1.05);
+    }
+
+    .skill-item p {
+      margin-top: 10px;
+      font-weight: bold;
+      color: #be185d;
+      font-size: 16px;
+    }
+
+    .skill-item.clicked {
+      background-color: #64ffda;
+      transform: scale(1.1);
+    }
+    #proyek {
+  padding-top: 100px;
+}
+#skill{
+    padding-top: 100px;
+}
+  </style>
+</head>
+<body class="text-gray-800">
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="text-white font-bold text-xl">Syaira</div>
+    <div>
+      <a href="#beranda">Beranda</a>
+      <a href="#tentang">Biodata</a>
+      <a href="#skill">Skill</a>
+      <a href="#proyek">Proyek</a>
+      <a href="#kontak">Kontak</a>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header id="beranda" class="text-center py-20" data-aos="fade-up">
+    <div class="rellax flex flex-col items-center" data-rellax-speed="-3">
+      <img src="fotoku.jpg" alt="Foto Profil" class="w-36 h-36 object-cover rounded-full shadow-lg border-4 border-white mb-6" />
+      <h1 class="text-5xl font-extrabold theme-text">Syaira Nurul Sabrina</h1>
+      <p class="text-xl mt-4 text-pink-800">Portofolio Design Syaira</p>
+    </div>
+  </header>
+
+  <!-- Tentang Saya -->
+  <section id="tentang" class="max-w-4xl mx-auto px-6 py-10" data-aos="fade-up">
+    <p class="bg-white p-6 rounded-xl shadow-md">
+      Saya adalah seorang mahasiswa semester 4 sistem informasi yang fokus pada UI/UX design.
+    </p>
+  </section>
+
+  <!-- Data Diri -->
+  <section class="max-w-4xl mx-auto px-6 py-10" data-aos="fade-up">
+    <h2 class="text-3xl font-bold mb-4 theme-text">Biodata Diri </h2>
+    <div class="bg-white p-6 rounded-xl shadow-md space-y-3">
+      <p><strong>Nama:</strong> Syaira Nurul Sabrina</p>
+      <p><strong>Tempat, Tanggal Lahir:</strong> Sekip, 5 Mei 2005</p>
+      <p><strong>Alamat:</strong>Sekip, Lubuk Pakam, Medan, Sumatera Utara</p>
+    </div>
+  </section>
+
+  <!-- Skill -->
+  <section id="skill" class="max-w-4xl mx-auto px-6 py-10" data-aos="fade-up">
+    <h2 class="text-3xl font-bold mb-4 theme-text">Skill</h2>
+    <div class="skills-box">
+      <div class="skill-item" onclick="skillClicked('HTML', event)" data-aos="zoom-in">
+        <img src="gambar html 1.png" alt="HTML">
+        <p>HTML</p>
+      </div>
+      <div class="skill-item" onclick="skillClicked('CSS', event)" data-aos="zoom-in">
+        <img src="css 2.png" alt="CSS">
+        <p>CSS</p>
+      </div>
+      <div class="skill-item" onclick="skillClicked('Blender', event)" data-aos="zoom-in">
+        <img src="blender 2.png" alt="Blender">
+        <p>Blender</p>
+      </div>
+      <div class="skill-item" onclick="skillClicked('Vsco', event)" data-aos="zoom-in">
+        <img src="vsco.png" alt="Vsco">
+        <p>Vsco</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Proyek -->
+  <section id="proyek" class="max-w-4xl mx-auto px-6 py-10" data-aos="fade-up">
+    <h2 class="text-3xl font-bold mb-4 theme-text">Proyek</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="bg-white rounded-xl shadow-md p-4 hover:scale-105 transform transition">
+        <img src="gambar blender.png" alt="Proyek 1" class="rounded mb-4">
+        <h3 class="text-xl font-semibold theme-text">Proyek 1</h3>
+        <p>3D Design Blender.</p>
+        <a href="https://drive.google.com/file/d/1WhYPoJ0KQQDIRKVEqcsgMNIW37mUYUqQ/view?usp=sharing" target="_blank" class="mt-3 inline-block bg-pink-500 text-white px-4 py-2 rounded hover:bg-pink-600 transition">Kunjungi</a>
+      </div>
+      <div class="bg-white rounded-xl shadow-md p-4 hover:scale-105 transform transition">
+        <img src="gambar html 2.png" alt="Proyek 2" class="rounded mb-4">
+        <h3 class="text-xl font-semibold theme-text">Proyek 2</h3>
+        <p>Website Login Landing Page.</p>
+        <a href="https://drive.google.com/file/d/1V3rV1XtNzQLSPFBqhsd8ClaMVXzIrUBj/view?usp=sharing" target="_blank" class="mt-3 inline-block bg-pink-500 text-white px-4 py-2 rounded hover:bg-pink-600 transition">Kunjungi</a>
+      </div>
+      <div class="bg-white rounded-xl shadow-md p-4 hover:scale-105 transform transition">
+        <img src="vsco.png" alt="Vsco" class="mx-auto mb-4 w-32 h-32 object-contain">
+        <h3 class="text-xl font-semibold theme-text">Proyek 3</h3>
+        <p>Editing</p>
+        <a href="#" class="mt-3 inline-block bg-pink-500 text-white px-4 py-2 rounded hover:bg-pink-600 transition">Kunjungi</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kontak -->
+  <section id="kontak" class="max-w-4xl mx-auto px-6 py-10" data-aos="fade-up">
+    <h2 class="text-3xl font-bold mb-4 theme-text">Kontak Saya</h2>
+    <div class="bg-white p-6 rounded-xl shadow-md space-y-2">
+      <p>Email: <a href="mailto:ssyairanurul@gmail.com" class="text-blue-500 hover:underline">ssyairanurul@gmail.com</a></p>
+      <p>Instagram: <a href="https://www.instagram.com/__aararaa" target="_blank" class="text-blue-500 hover:underline">@__aararaa</a></p>
+      <p>GitHub: <a href="https://github.com/Syaira05" target="_blank" class="text-blue-500 hover:underline">github.com/Syaira05</a></p>
+      <p>WhatsApp: <a href="tel:083871707211" class="text-blue-500 hover:underline">083871707211</a></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-10 text-gray-600">
+    &copy; 2025 Syaira Nurul Sabrina.
+  </footer>
+
+  <!-- Script -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({ once: true, duration: 1000 });
+    new Rellax('.rellax');
+    function skillClicked(skillName, event) {
+      const items = document.querySelectorAll('.skill-item');
+      items.forEach(item => item.classList.remove('clicked'));
+      event.currentTarget.classList.add('clicked');
+      setTimeout(() => {
+        event.currentTarget.classList.remove('clicked');
+      }, 300);
+      alert(`Kamu mengklik skill: ${skillName}`);
+    }
+  </script>
+
+</body>
+</html>
+
