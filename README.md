@@ -12,7 +12,7 @@
       scroll-behavior: smooth;
     }
     :root {
-      --theme-color: #ec4899;
+      --theme-color: #fa87c1;
     }
     .theme-text { color: var(--theme-color); }
     .theme-bg { background-color: var(--theme-color); }
@@ -20,7 +20,7 @@
 
     body {
       font-family: Arial, sans-serif;
-      background: linear-gradient(to bottom, #ffebf7, #ff8dce); 
+      background: linear-gradient(to bottom, #ffdbf1, #f581c3); 
       margin: 0;
       padding: 0;
     }
