@@ -17,15 +17,16 @@
     .theme-text { color: var(--theme-color); }
     .theme-bg { background-color: var(--theme-color); }
 
+
     body {
       font-family: Arial, sans-serif;
-      background: linear-gradient(to bottom, #ffffff, #fbcfe8); 
+      background: linear-gradient(to bottom, #ffebf7, #ff8dce); 
       margin: 0;
       padding: 0;
     }
 
     .navbar {
-      background-color: #f472b6;
+      background-color: #ff7dc0;
       padding: 15px 30px;
       display: flex;
       justify-content: space-between;
@@ -191,7 +192,8 @@
       <div class="bg-white rounded-xl shadow-md p-4 hover:scale-105 transform transition">
         <img src="vsco.png" alt="Vsco" class="mx-auto mb-4 w-32 h-32 object-contain">
         <h3 class="text-xl font-semibold theme-text">Proyek 3</h3>
-        <p>Edit foto menggunakan vsco </p>
+        <p>Editing</p>
+
        <a href="https://drive.google.com/file/d/1HZYoE0Sl6iSwNnU8hnD8VCl_D1uLzG7m/view?usp=drive_link" target="_blank" class="mt-3 inline-block bg-pink-500 text-white px-4 py-2 rounded hover:bg-pink-600 transition">Kunjungi</a>
     </div>
     </div>
