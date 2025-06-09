@@ -192,8 +192,8 @@
         <img src="vsco.png" alt="Vsco" class="mx-auto mb-4 w-32 h-32 object-contain">
         <h3 class="text-xl font-semibold theme-text">Proyek 3</h3>
         <p>Editing</p>
-        <a href="#" class="mt-3 inline-block bg-pink-500 text-white px-4 py-2 rounded hover:bg-pink-600 transition">Kunjungi</a>
-      </div>
+       <a href="https://drive.google.com/file/d/1HZYoE0Sl6iSwNnU8hnD8VCl_D1uLzG7m/view?usp=drive_link" target="_blank" class="mt-3 inline-block bg-pink-500 text-white px-4 py-2 rounded hover:bg-pink-600 transition">Kunjungi</a>
+    </div>
     </div>
   </section>
 
@@ -231,4 +231,3 @@
 
 </body>
 </html>
-
